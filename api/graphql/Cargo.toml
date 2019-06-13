@@ -1,0 +1,13 @@
+[package]
+name = "graphql"
+version = "0.1.0"
+authors = ["Pocket Of Weird <hartzlernathan@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+http = "*"
+now_lambda = "*"
+juniper = "*"
+rusted_cypher = "*"
+serde_json = "*"
+uuid = { version = "*", features = ["v4", "serde"] }

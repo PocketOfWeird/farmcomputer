@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "name": "farmstudy",
+  "builds": [
+    {
+      "src": "api/graphql/Cargo.toml",
+      "use": "@now/rust@canary"
+    },
+    {
+      "src": "api/playground/Cargo.toml",
+      "use": "@now/rust@canary"
+    },
+    {
+      "src": "index.html",
+      "use": "@now/static"
+    }
+  ],
+  "env": {
+    "NEO_URL": "@neo-url-farmstudy"
+  },
+  "routes": [
+    {"src": "/graphql(.*)", "dest": "/api/graphql/graphql"},
+    {"src": "/playground(.*)", "dest": "/api/playground/playground"}
+  ]
+}
