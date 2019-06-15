@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "farmstudy",
+  "name": "farmcomputer",
   "builds": [
     {
       "src": "api/graphql/Cargo.toml",
@@ -16,7 +16,7 @@
     }
   ],
   "env": {
-    "NEO_URL": "@neo-url-farmstudy"
+    "NEO_URL": "@neo-url-farmcomputer"
   },
   "routes": [
     {"src": "/graphql(.*)", "dest": "/api/graphql/graphql"},
